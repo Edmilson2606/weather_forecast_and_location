@@ -1,0 +1,48 @@
+:root{
+    --blue: #0C70F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --black-gray: #1F1F1F;
+    --gray: #393939;
+}
+
+body {
+    font-family: Inter;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 103px;
+    background-color: var(--blue);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-container h3 {
+    color: var(--white);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.navbar-container a {
+    text-decoration: none;
+}
+
+.navbar-items li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.navbar-items a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: var(--gray);
+}
