@@ -4,45 +4,185 @@
     --black: #000000;
     --black-gray: #1F1F1F;
     --gray: #393939;
+    --page: #F5F5F5;
+    --container-main: #F2F2F2;
+    --container-border: #BABABA;
 }
 
 body {
     font-family: Inter;
+    background-color: var(--page);
+    width: 1608px;
+    height: 2983px;
+    margin: auto;
 }
 
-.navbar-container {
-    width: 100%;
+.container-nav {
     height: 103px;
     background-color: var(--blue);
-    padding: 0 2rem;
+    color: var(--white);
+    padding: 0 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar-container h3 {
+.brand-nav {
     color: var(--white);
     font-size: 50px;
     font-weight: bold;
-}
-
-.navbar-container a {
     text-decoration: none;
 }
 
-.navbar-items li {
-    display: inline-block;
-    margin-left: 25px;
+.list-nav {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.navbar-items a {
+.list-nav a {
     color: var(--white);
     text-decoration: none;
+    transition: 0.5s;
     font-size: 25px;
     font-weight: bold;
-    transition: 0.5s;
 }
 
-.navbar-items a:hover {
-    color: var(--gray);
+.container-main {
+    border: 1px solid var(--container-border);
+    background-color: var(--container-main);
+}
+
+.container-section-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 7.5rem 15rem;
+}
+
+.container-section-hero p {
+    color: var(--black-gray);
+    font-size: 50px;
+    font-weight: 800;
+    width: 879px;
+    margin: 0px;
+}
+
+.container-section-hero img {
+    width: 255px;
+    height: 197px;
+    margin-bottom: 5rem;
+}
+
+.container-section-form {
+    width: 859px;
+    height: 930px;
+    border-radius: 30px;
+    background-color: var(--white);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-section-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-section-form label {
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.container-section-form input {
+    background-color: rgba(242, 242, 242, 0.90);
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 2rem;
+    height: 56px;
+    width: 630px;
+}
+
+.container-section-form 
+input[name="latitude"],
+input[name="longitude"] {
+    width: 280px;
+}
+
+.container-section-form 
+.coordinates {
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.container-section-form button {
+    width: 650px;
+    height: 56px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(12, 112, 242, 0.90);
+    box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+    margin-top: 5rem;
+    cursor: pointer;
+
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.container-section-cep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24rem;
+    margin-bottom: 10rem;
+}
+
+.container-section-cep div {
+    display: flex;
+}
+
+.container-section-cep h3 {
+    width: 879px;
+    height: 96px;
+    color: var(--black-gray);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.container-section-cep img {
+    width: 136px;
+    height: 133px;
+    margin-left: -9rem;
+}
+
+.container-section-cep .cep {
+    display: flex;
+}
+
+.container-section-cep table {
+    width: 1024px;
+    background-color: var(--blue);
+    border-radius: 30px;
+}
+
+.container-section-cep table th {
+    height: 72px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.container-section-cep table td {
+    background-color: var(--white);
+    color: var(--black-gray);
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
 }
