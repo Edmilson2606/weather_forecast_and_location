@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <header>
+    <header class="container-header">
         <nav class="container-nav">
             <a class="brand-nav" href="#">DncWeather</a>
             <ul class="list-nav">
@@ -27,8 +27,10 @@
     <main class="container-main">
         <section class="container-section-hero">
             <div>
-                <p>Descubra Mais com Precisão:</p>
-                <p>Previsões do Tempo e endereços em tempo real.</p>
+                <p>
+                    Descubra Mais com Precisão:
+                    Previsões do Tempo e endereços em tempo real.
+                </p>
             </div>
             <div>    
                 <img src="./img/image_1.svg" alt="logo da hero">
@@ -84,33 +86,61 @@
             </form>
         </section>
         <section class="container-section-cep">
-            <div>
+            <div class="cep-title">
                 <h3>Resultado da busca por CEP:</h3>
                 <img src="./img/image_2.svg" alt="logo do cep">
             </div>
-            <div class="cep">
-                <table cellspacing="0" rules="none">  
-                    <tr>
-                        <th>Logradouro/nome</th>
-                        <th>Bairro/Distrito</th>
-                        <th>Localidade/UF</th>
-                    </tr>
-                    <tr>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xx</td>
-                    </tr>
-                    <tr>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xx</td>
-                    </tr>
-                </table>
-                
+
+            <!-- Utilizando tabela para popular com todos os 
+                números dos logradouros referente ao CEP.
+                Obs: não faz parte do escopo.            
+
+                <div class="cep">
+                    <table cellspacing="0" rules="none">  
+                        <tr>
+                            <th>Logradouro/nome</th>
+                            <th>Bairro/Distrito</th>
+                            <th>Localidade/UF</th>
+                        </tr>
+                        <tr>
+                            <td>xxxxx</td>
+                            <td>xxxxx</td>
+                            <td>xx</td>
+                        </tr>
+                    </table>
+                </div> 
+            -->
+            
+            <div class="cep-information">
+                <div class="cep-head">
+                    <h5>Logradouro/nome</h5>
+                    <h5>Bairro/Distrito</h5>
+                    <h5>Localidade/UF</h5>
+                </div>
+                <div class="cep-body">
+                    <span>Rua A</span>
+                    <span>Atalaia</span>
+                    <span>SE</span>
+                </div>
             </div>
         </section>
+
+        <section class="container-section-weather">
+            <div class="weather-title">
+                <h3>Previsão do tempo na região:</h3>
+                <img src="./img/image_3.svg" alt="logo do cep">
+            </div>
+            <div class="weather-information">
+                <p>Previsão de tempo de acordo com a região: 24"C</p>
+            </div>
+        </section>
+
+        <footer class="container-footer">
+            <a href="">Termo de Uso</a>
+            <a href="">Política de Privacidade</a>
+        </footer>
+        
     </main>
-    
 
 
 
