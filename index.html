@@ -37,14 +37,18 @@
             </div>
         </section>
         <section class="container-section-form">
-            <form action="">
+            <!-- <form id="form"> -->
+            <form>
                 <div>
-                    <label for="name">Primeiro nome</label>
+                    <label for="first-name">Primeiro nome</label>
                     <input
                         type="text"
-                        name="name"
-                        id="name"
+                        name="first-name"
+                        id="first-name"
                         placeholder="Insira seu primeiro nome"
+                        minlength="3"
+                        
+                        onchange="validName()"
                     />
                 </div>
                 <div>
@@ -53,7 +57,10 @@
                         type="email"
                         name="email"
                         id="email"
-                        placeholder="Insira seu e-mail"
+                        placeholder="Insira seu e-mail no formato correto"
+                        Pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/"
+                        
+                        onchange="validEmail()"
                     />
                 </div>            
                 <div>
@@ -62,27 +69,34 @@
                         type="text"
                         name="cep"
                         id="cep"
-                        placeholder="Insira o cep"
+                        placeholder="Insira o cep no formato correto"
+                        pattern="\d{5}-?\d{3}"
+                        required
+                        onchange="validCEP()"
                     />
                 </div>            
                 <div>
-                    <label for="">Digite a latitude e longitude para saber a previsão:</label>
+                    <label>Digite a latitude e longitude para saber a previsão:</label>
                     <div class="coordinates">
                         <input
-                            type="text"
+                            type="number"
                             name="latitude"
                             id="latitude"
                             placeholder="Insira a latitude"
-                        />
+                            required
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                            />
                         <input
-                            type="text"
+                            type="number"
                             name="longitude"
                             id="longitude"
                             placeholder="Insira a longitude"
-                        />
+                            required
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                            />
                     </div>
                 </div>  
-                <button>Acessar</button>          
+                <button type="button" onclick="getAddressByCep(), getPrevisao()">Acessar</button>          
             </form>
         </section>
         <section class="container-section-cep">
@@ -118,9 +132,9 @@
                     <h5>Localidade/UF</h5>
                 </div>
                 <div class="cep-body">
-                    <span>Rua A</span>
-                    <span>Atalaia</span>
-                    <span>SE</span>
+                    <input type="text" id="rua">
+                    <input type="text" id="bairro">
+                    <input type="text" id="cidade">
                 </div>
             </div>
         </section>
@@ -131,7 +145,9 @@
                 <img src="./img/image_3.svg" alt="logo do cep">
             </div>
             <div class="weather-information">
-                <p>Previsão de tempo de acordo com a região: 24"C</p>
+                <p>
+                    Previsão de tempo de acordo com a região:<span id="forecast"></span>
+                </p>
             </div>
         </section>
 
@@ -152,5 +168,6 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
         crossorigin="anonymous">
     </script> -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
