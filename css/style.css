@@ -179,33 +179,6 @@ input[name="longitude"] {
     flex-direction: column;  
 }
 
-/* 
-Utilizando tabela para popular com todos os 
-números dos logradouros referente ao CEP.
-Obs: não faz parte do escopo. 
-
-.container-section-cep table {
-    width: 1024px;
-    background-color: var(--blue);
-    border-radius: 30px;
-}
-
-.container-section-cep table th {
-    height: 72px;
-    color: var(--white);
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.container-section-cep table td {
-    background-color: var(--white);
-    color: var(--black-gray);
-    font-size: 20px;
-    font-weight: 800;
-    text-align: center;
-} 
-*/
-
 .container-section-cep .cep-head {
     width: 1024px;
     height: 72px;
@@ -247,7 +220,6 @@ Obs: não faz parte do escopo.
     margin-top: 14rem;
     margin-bottom: 10rem;
 }
-
 
 .container-section-weather .weather-title {
     display: flex;
