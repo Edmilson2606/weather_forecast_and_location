@@ -1,4 +1,4 @@
-:root{
+:root {
     --blue: #0C70F2;
     --white: #FFFFFF;
     --black: #000000;
@@ -19,6 +19,7 @@ body {
 
 .container-header {
     width: 100%;
+    border: 1px solid var(--blue);
 }
 
 .container-nav {
@@ -116,14 +117,12 @@ body {
     width: 630px;
 }
 
-.container-section-form 
-input[name="latitude"],
+.container-section-form input[name="latitude"],
 input[name="longitude"] {
     width: 280px;
 }
 
-.container-section-form 
-.coordinates {
+.container-section-form .coordinates {
     flex-direction: row;
     gap: 2rem;
 }
@@ -176,7 +175,7 @@ input[name="longitude"] {
 
 .container-section-cep .cep-information {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 .container-section-cep .cep-head {
@@ -193,7 +192,7 @@ input[name="longitude"] {
     justify-content: space-around;
 }
 
-.container-section-cep .cep-body{
+.container-section-cep .cep-body {
     width: 1024px;
     height: 72px;
     background-color: var(--white);
@@ -262,13 +261,15 @@ input[name="longitude"] {
 }
 
 .container-footer {
-   width: 1608px;
-   height: 94px;
-   background-color: var(--blue);
+    width: 100%;
+    border: 1px solid var(--blue);
+    /* width: 1608px; */
+    height: 94px;
+    background-color: var(--blue);
 
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .container-footer a {

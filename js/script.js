@@ -29,16 +29,6 @@ const validateEmail = (emailTest) => {
     return regex.test(emailTest);
 }
 
-// document.getElementById('cep').addEventListener('keydown', function(e) {
-//     if (e.key === 'Tab' || e.which === 9) {
-//         if (this.value === '') {
-//             e.preventDefault();
-//             alert("Precisa informar o CEP.");
-//             cep = document.getElementById("cep").focus();
-//         }
-//     }
-// });
-
 function validCEP(){
     let cep = document.getElementById("cep");
     let cepTest = cep.value;
@@ -79,26 +69,6 @@ async function getAddressByCep() {
         alert(error.message);
     }
 }
-
-// document.getElementById('latitude').addEventListener('keydown', function(e) {
-//     if (e.key === 'Tab' || e.which === 9) {
-//         if (this.value === '') {
-//             e.preventDefault();
-//             alert("Precisa informar a Latitude.");
-//             cep = document.getElementById("latitude").focus();
-//         }
-//     }
-// });
-
-// document.getElementById('longitude').addEventListener('keydown', function(e) {
-//     if (e.key === 'Tab' || e.which === 9) {
-//         if (this.value === '') {
-//             e.preventDefault();
-//             alert("Precisa informar a Longitude.");
-//             cep = document.getElementById("longitude").focus();
-//         }
-//     }
-// });
 
 async function getForecast() {
     const lat = document.getElementById('latitude').value;
