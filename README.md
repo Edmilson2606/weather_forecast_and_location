@@ -1,10 +1,12 @@
 # Weather Forecast and Location
 ## Previsões do tempo e endereços em tempo real.
-> Desenvolvimento do sistema interno para os funcinários, que os ajudará a acessar informações criticas sobre endereços e previsões meteorológicas de maneira eficiente.
+> Combinando recursos de geolocalização e previsão do tempo, o sistema é uma ferramenta essencial para melhorar a produtividade e a precisão no planejamento de atividades que dependem de condições geográficas e climáticas.
 
-Foco na acessibilidade e a simplicidade são fundamentais para o sucesso de qualquer sistema interno. Portanto, será criada uma interface de usuário atraente e funcional que permitirá aos funcionários inserir facilmente as informações necessárias para obter dados de endereço e previsões meteorológicas. 
+O foco na acessibilidade e simplicidade é fundamental para o sucesso de qualquer sistema interno. Por isso, será desenvolvida uma interface de usuário atraente e funcional, permitindo que os funcionários insiram facilmente as informações necessárias para obter dados de endereço e previsões meteorológicas.
 
-Este projeto visa criar uma ferramenta útil para o dia a dia dos usuários que trabalham com informações deste tipo, desenvolvendo telas focados no design e experiencia do usuário, fornecendo dados importantes sobre endereço e previsão do tempo através de uma API.
+Este projeto visa criar uma ferramenta útil para o dia a dia dos usuários que lidam com esse tipo de informação. As telas serão desenvolvidas com ênfase no design e na experiência do usuário, fornecendo dados importantes sobre endereços e previsões do tempo através de uma API.
+
+
 
 
 ## Ambiente de desenvolvimento
@@ -17,8 +19,8 @@ Este projeto visa criar uma ferramenta útil para o dia a dia dos usuários que 
 #### Teste da requisição na API "open-meteo.com/en/docs/"
 ![](./img/apiPrevisao.png)
 
-Edmilson Correia Melo - [@LinkedIn](https://www.linkedin.com/in/edmilsonmelo2606/) - ecmelo.26@gmail.com
+Edmilson Correia Melo - [LinkedIn](https://www.linkedin.com/in/edmilsonmelo2606/) - ecmelo.26@gmail.com
 
-Link do GitHub - [https://github.com/Edmilson2606/weather_forecast_and_location](https://github.com/Edmilson2606)
+Link do GitHub: [Github](https://github.com/Edmilson2606/weather_forecast_and_location) - https://github.com/Edmilson2606/weather_forecast_and_location
 
-Link do sistema disponibilizado - []()
+Link do sistema: [Weather Forecast and Location](https://wfl.netlify.app/) - https://wfl.netlify.app/
